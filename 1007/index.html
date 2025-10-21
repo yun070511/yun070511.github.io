@@ -15,26 +15,28 @@
             align-items: center;
             height: 100vh;
         }
-        .card {
-            display: flex;
+        table {
             background: #fff;
-            border-radius: 20px;
+            border-radius: 16px;
             box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-            overflow: hidden;
-            width: 600px;
-            max-width: 95vw;
+            border-collapse: collapse; /* 重要：讓邊框合併 */
+            min-width: 600px;
+            border: 1px solid #e0e0e0;
         }
-        .card-left {
-            background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 240px;
-            padding: 30px;
+        th, td {
+            padding: 20px 24px;
+            text-align: left;
+            border: 1px solid #e0e0e0; /* 加上豎線 */
+        }
+        th {
+            background: #007bff;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
         }
         .hexagon-img {
-            width: 160px;
-            height: 160px;
+            width: 100px;
+            height: 100px;
             clip-path: polygon(
                 50% 0%,
                 93% 25%,
@@ -44,68 +46,52 @@
                 7% 25%
             );
             object-fit: cover;
-            border: 6px solid #fff;
+            border: 4px solid #fff;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
             background: #fff;
             display: block;
         }
-        .card-right {
-            flex: 1;
-            padding: 32px 28px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
         .title {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #007bff;
-            margin-bottom: 10px;
         }
         .desc {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #333;
-            margin-bottom: 8px;
         }
         .date {
             font-size: 0.95rem;
             color: #666;
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-  <div style="display: flex; gap: 32px; flex-wrap: wrap; justify-content: center;">
-    <div class="card">
-      <div class="card-left">
-        <img src="470.jpg" alt="傍晚的河岸與城市天際線倒影" class="hexagon-img">
-      </div>
-      <div class="card-right">
-        <div class="title">河畔夕照</div>
-        <div class="desc">金色陽光灑在河面，倒映城市天際線。</div>
-        <div class="date">拍攝日期：2025-09-01</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-left">
-        <img src="2.jpg" alt="繁華的城市街道" class="hexagon-img">
-      </div>
-      <div class="card-right">
-        <div class="title">城市街道</div>
-        <div class="desc">繁華的街道上，人潮洶湧。</div>
-        <div class="date">拍攝日期：2025-09-02</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-left">
-        <img src="003.jpg" alt="沙灘、海浪與遠方的帆船" class="hexagon-img">
-      </div>
-      <div class="card-right">
-        <div class="title">清晨海浪</div>
-        <div class="desc">第一道陽光照亮浪花與沙粒。</div>
-        <div class="date">拍攝日期：2025-09-03</div>
-      </div>
-    </div>
-  </div>
+  <table>
+    <tr>
+      <th>照片</th>
+      <th>標題</th>
+      <th>描述</th>
+      <th>拍攝日期</th>
+    </tr>
+    <tr>
+      <td><img src="470.jpg" alt="傍晚的河岸與城市天際線倒影" class="hexagon-img"></td>
+      <td class="title">河畔夕照</td>
+      <td class="desc">金色陽光灑在河面，倒映城市天際線。</td>
+      <td class="date">2025-09-01</td>
+    </tr>
+    <tr>
+      <td><img src="2.jpg" alt="繁華的城市街道" class="hexagon-img"></td>
+      <td class="title">城市街道</td>
+      <td class="desc">繁華的街道上，人潮洶湧。</td>
+      <td class="date">2025-09-02</td>
+    </tr>
+    <tr>
+      <td><img src="003.jpg" alt="沙灘、海浪與遠方的帆船" class="hexagon-img"></td>
+      <td class="title">清晨海浪</td>
+      <td class="desc">第一道陽光照亮浪花與沙粒。</td>
+      <td class="date">2025-09-03</td>
+    </tr>
+  </table>
 </body>
 </html>
