@@ -1,10 +1,20 @@
 <!-- 1 -->
 <!-- 國北心諮學生介紹與照片 -->
 <div class="container">
-    <h1>國立台北教育大學</h1>
-    <img src="https://www.ntue.edu.tw/var/file/0/1000/img/109/206017017.jpg" alt="國北校園照片" style="width:100%; border-radius:16px; margin-bottom:18px; box-shadow:0 2px 8px #ffd6e0;">
+    <h1>黃靖云</h1>
     <div class="food">
-        身為國立台北教育大學心理與諮商學系的學生，我對學校附近的美食有一定的了解，能夠推薦最適合大家的美食選擇，更容易說服觀眾品嚐這些美味佳餚！
+        作品集
+    </div>
+    <!-- 作品連結區：可在 href 填入連結，或修改文字 -->
+    <div class="works">
+        <a class="work-link" href="#" target="_blank" rel="noopener">作品 1</a>
+        <a class="work-link" href="https://yun070511.github.io/0930/" target="_blank" rel="noopener">0930</a>
+        <a class="work-link" href="https://yun070511.github.io/1007/" target="_blank" rel="noopener">1007</a>
+        <a class="work-link" href="https://yun070511.github.io/1014/" target="_blank" rel="noopener">1014</a>
+        <a class="work-link" href="https://yun070511.github.io/1021/" target="_blank" rel="noopener">1021</a>
+        <a class="work-link" href="https://yun070511.github.io/1028/" target="_blank" rel="noopener">1028</a>
+        <a class="work-link" href="https://yun070511.github.io/1118/" target="_blank" rel="noopener">1118</a>
+        <a class="work-link" href="https://sites.google.com/stu.ntue.edu.tw/cheese/%E9%A6%96%E9%A0%81" target="_blank" rel="noopener">1125</a>
     </div>
 </div>
 <!-- 2 -->
@@ -68,6 +78,28 @@
         .cute {
             font-size: 2em;
             margin-bottom: 10px;
+        }
+        /* 作品集連結樣式 */
+        .works {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        .work-link {
+            display: inline-block;
+            background: #fff0f6;
+            color: #ff5eaa;
+            padding: 10px 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 2px 8px #ffd6e0;
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+        .work-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px #ffd6e0;
         }
     </style>
 </head>
