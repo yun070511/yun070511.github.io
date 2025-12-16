@@ -7,7 +7,7 @@
     </div>
     <!-- 作品連結區：可在 href 填入連結，或修改文字 -->
     <div class="works">
-        <a class="work-link" href="#" target="_blank" rel="noopener">作品 1</a>
+        <a class="work-link" href="https://yun070511.github.io/.vscode/" target="_blank" rel="noopener">.vscode</a>
         <a class="work-link" href="https://yun070511.github.io/0930/" target="_blank" rel="noopener">0930</a>
         <a class="work-link" href="https://yun070511.github.io/1007/" target="_blank" rel="noopener">1007</a>
         <a class="work-link" href="https://yun070511.github.io/1014/" target="_blank" rel="noopener">1014</a>
@@ -81,10 +81,10 @@
         }
         /* 作品集連結樣式 */
         .works {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             gap: 12px;
-            justify-content: center;
+            justify-items: center;
             margin-top: 16px;
         }
         .work-link {
@@ -96,6 +96,9 @@
             text-decoration: none;
             box-shadow: 0 2px 8px #ffd6e0;
             transition: transform 0.18s ease, box-shadow 0.18s ease;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
         }
         .work-link:hover {
             transform: translateY(-3px);
@@ -117,7 +120,6 @@
         </div>
         <hr style="border: none; border-top: 1px solid #ffe0f0; margin: 32px 0 18px 0;">
         <div class="food" style="background: none; box-shadow: none; color: #ff85a2; font-size: 1.05em; margin-bottom: 0;">
-            願美食為你帶來溫暖與快樂，讓每一天都充滿幸福。
         </div>
     </div>
 </body>
