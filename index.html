@@ -7,15 +7,19 @@
     </div>
     <!-- 作品連結區：可在 href 填入連結，或修改文字 -->
     <div class="works">
-        <a class="work-link" href="https://yun070511.github.io/0930/" target="_blank" rel="noopener">0930</a>
-        <a class="work-link" href="https://yun070511.github.io/1007/" target="_blank" rel="noopener">1007</a>
-        <a class="work-link" href="https://yun070511.github.io/1014/" target="_blank" rel="noopener">1014</a>
-        <a class="work-link" href="https://yun070511.github.io/1021/" target="_blank" rel="noopener">1021</a>
-        <a class="work-link" href="https://yun070511.github.io/1028/" target="_blank" rel="noopener">1028</a>
-        <a class="work-link" href="https://yun070511.github.io/1118/" target="_blank" rel="noopener">1118</a>
-        <a class="work-link" href="https://sites.google.com/stu.ntue.edu.tw/cheese/%E9%A6%96%E9%A0%81" target="_blank" rel="noopener">1125</a>
-        <a class="work-link" href="https://sites.google.com/stu.ntue.edu.tw/cheese/%E9%A6%96%E9%A0%81" target="_blank" rel="noopener">1209</a>
-        <a class="work-link" href="https://yun070511.github.io/1014/bonus.html" target="_blank" rel="noopener">bonus</a>
+        <div class="row row-top">
+            <a class="work-link" href="https://yun070511.github.io/0930/" target="_blank" rel="noopener">0930</a>
+            <a class="work-link" href="https://yun070511.github.io/1007/" target="_blank" rel="noopener">1007</a>
+            <a class="work-link" href="https://yun070511.github.io/1014/" target="_blank" rel="noopener">1014</a>
+            <a class="work-link" href="https://yun070511.github.io/1021/" target="_blank" rel="noopener">1021</a>
+        </div>
+        <div class="row row-bottom">
+            <a class="work-link" href="https://yun070511.github.io/1028/" target="_blank" rel="noopener">1028</a>
+            <a class="work-link" href="https://yun070511.github.io/1118/" target="_blank" rel="noopener">1118</a>
+            <a class="work-link" href="https://sites.google.com/stu.ntue.edu.tw/cheese/%E9%A6%96%E9%A0%81" target="_blank" rel="noopener">1125</a>
+            <a class="work-link" href="https://sites.google.com/stu.ntue.edu.tw/cheese/%E9%A6%96%E9%A0%81" target="_blank" rel="noopener">1209</a>
+            <a class="work-link" href="https://yun070511.github.io/1014/bonus.html" target="_blank" rel="noopener">bonus</a>
+        </div>
     </div>
 </div>
 <!-- 2 -->
@@ -82,12 +86,19 @@
         }
         /* 作品集連結樣式 */
         .works {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            flex-direction: column;
             gap: 12px;
-            justify-items: center;
             margin-top: 16px;
         }
+        .row {
+            display: grid;
+            gap: 12px;
+            justify-items: center;
+            width: 100%;
+        }
+        .row-top { grid-template-columns: repeat(4, 1fr); }
+        .row-bottom { grid-template-columns: repeat(5, 1fr); }
         .work-link {
             display: inline-block;
             background: #fff0f6;
