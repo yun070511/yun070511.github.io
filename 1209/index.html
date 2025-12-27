@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國力台北教育大學美食地圖 | 國北心諮</title>
+    <style>
+        /* 基礎設定 */
+        :root {
+            --primary-pink: #ffb7c5;
+            --soft-yellow: #fff9e6;
+            --text-gray: #5a5a5a;
+            --accent-color: #ff8fa3;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--soft-yellow);
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-pink);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px dashed var(--primary-pink);
+            padding-bottom: 10px;
+        }
+
+        /* 區塊 1：自我介紹 */
+        .intro-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+
+        /* 區塊 2：美食地圖 */
+        .map-placeholder {
+            background-color: #e3f2fd;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            border: 2px solid #bbdefb;
+        }
+
+        /* 區塊 3：美食介紹 */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .food-card {
+            border: 1px solid #eee;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* 區塊 4：結語與聯絡方式 (你的 AI 修正重點) */
+        footer {
+            background-color: var(--primary-pink);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            margin-top: 50px;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        .ig-logo {
+            width: 30px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        a { color: white; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍰 美食筆記 🍦</h1>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>🌸 關於我</h2>
+            <p>你好！我是<strong>黃靖云</strong>，目前就讀於<strong>國立台北教育大學心理與諮商學系</strong>大一 [cite: 3, 4, 13]。因為每天都在這附近活動，我對國北周邊的美食可是很有心得的喔！希望透過我的分享，能讓你更有說服力地找到好吃的店。</p>
+            <img src="ntue-photo.jpg" alt="國北校園景色" class="intro-img">
+        </section>
+
+        <section id="map">
+            <h2>📍 美食探險地圖</h2>
+            <p>我幫大家標註了最推薦的店家位置，點開看看在哪裡吧！</p>
+            <div class="map-placeholder">
+                <p>（地圖載入中 / 請放置地圖圖片）</p>
+            </div>
+        </section>
+
+        <section id="food">
+            <h2>🍱 嚴選美食推薦</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="food1.jpg" alt="美食1">
+                    <h3>精選店家 A</h3>
+                    <p>這是我最喜歡的一間店，評論：...</p>
+                </div>
+                <div class="food-card">
+                    <img src="food2.jpg" alt="美食2">
+                    <h3>精選店家 B</h3>
+                    <p>CP值超高，學生族必吃！</p>
+                </div>
+                <div class="food-card">
+                    <img src="food3.jpg" alt="美食3">
+                    <h3>精選店家 C</h3>
+                    <p>甜點控絕對不能錯過這一家。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <h2>💌 靖云的小小心得</h2>
+        <p>美食是治癒心靈最好的良藥，希望這份地圖能帶給你滿滿的幸福感！<br>如果你也有推薦的私藏名單，歡迎隨時聯絡我一起交流喔！✨</p>
+        
+        <div class="contact-info">
+            <p>🏫 國立台北教育大學 心理與諮商學系 | 大一</p>
+            <p>📧 Email: <a href="mailto:s111411015@stu.ntue.edu.tw">s111411015@stu.ntue.edu.tw</a></p>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="IG" class="ig-logo">
+                <a href="#">@你的IG帳號</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
