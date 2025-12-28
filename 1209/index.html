@@ -80,7 +80,7 @@
             border-radius: 20px;
             overflow: hidden;
             border: 3px solid var(--primary-pink);
-            line-height: 0; /* 移除 iframe 下方空白 */
+            line-height: 0;
         }
 
         /* 區塊 3：美食介紹 */
@@ -122,7 +122,7 @@
             font-size: 0.95em;
         }
 
-        /* 區塊 4：結語與聯絡方式 */
+        /* 區塊 4：結語與聯絡方式 [cite: 8, 11, 23] */
         footer {
             background-color: var(--primary-pink);
             color: white;
@@ -158,7 +158,7 @@
             font-weight: bold;
             margin-top: 15px;
             background: var(--accent-color);
-            padding: 10px 20px;
+            padding: 12px 25px;
             border-radius: 50px;
             transition: background 0.3s;
         }
@@ -169,7 +169,8 @@
 
         .ig-logo {
             width: 25px;
-            filter: brightness(0) invert(1); /* 讓圖標變白色 */
+            height: 25px;
+            filter: brightness(0) invert(1);
         }
 
         footer a {
@@ -177,7 +178,7 @@
             text-decoration: underline;
         }
 
-        /* 響應式調整 */
+        /* 響應式調整 [cite: 31] */
         @media (max-width: 600px) {
             header h1 { font-size: 1.5em; }
             section { padding: 20px; }
@@ -197,15 +198,15 @@
             <div class="intro-content">
                 <img src="jpg1.jpg" alt="靖云的照片" class="intro-img">
                 <div class="intro-text">
-                    <p>你好！我是<strong>黃靖云</strong>，目前就讀於<strong>國立台北教育大學心理與諮商學系</strong>大一。</p>
-                    <p>因為每天都在這附近活動，我對國北周邊的美食可說是小有心得！這裡不僅有填飽肚子的日常便當，還有能放鬆心情的古早小舖。希望透過我的分享，能帶你找到最適合你的那一味！</p>
+                    <p>你好！我是<strong>黃靖云</strong>，目前就讀於<strong>國立台北教育大學心理與諮商學系</strong>大一 [cite: 13, 14, 23, 24]。</p>
+                    <p>因為每天都在這附近活動，我對國北周邊的美食可說是小有心得！希望透過我的分享，能帶你找到最適合你的那一味！ </p>
                 </div>
             </div>
         </section>
 
         <section id="map">
             <h2>📍 美食探險地圖</h2>
-            <p>點擊地圖標記，看看我推薦的店家在哪裡吧！</p>
+            <p>點擊地圖標記，看看我推薦的店家在哪裡吧！ </p>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3615.32516151419!2d121.5396061750454!3d25.02303692782351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTE45be3576O6aOf!5e0!3m2!1szh-TW!2stw!4v1766904206183!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -234,22 +235,20 @@
     </div>
 
     <footer>
-        <h2>💌心得</h2>
-        <p>對我來說，美食是治癒心靈最好的良藥。<br>希望這份地圖能帶給你滿滿的幸福感與飽足感！✨</p>
+        <h2>💌 心得</h2>
+        <p>對我來說，美食是治癒心靈最好的良藥。<br>希望這份地圖能帶給你滿滿的幸福感與飽足感！✨ [cite: 23]</p>
         
         <div class="contact-box">
-            <p>🏫 國立台北教育大學 | 心理與諮商學系 大一</p>
-            <p>📧 Email: <a href="mailto:s111411015@stu.ntue.edu.tw">s111411015@stu.ntue.edu.tw</a></p>
+            <p>🏫 國立台北教育大學 | 心理與諮商學系 大一 [cite: 13, 23, 24]</p>
+            <p>📧 Email: <a href="mailto:s111411015@stu.ntue.edu.tw">s111411015@stu.ntue.edu.tw</a> [cite: 14, 24]</p>
             
-            <a href="https://www.instagram.com/你的帳號" class="ig-link" target="_blank">
-                <img src="https://www.instagram.com/yuuun_5.11?igsh=Ynlsb3FnNzh1b242&utm_source=qr" alt="IG" class="">
+            <a href="https://www.instagram.com/yuuun_5.11?igsh=Ynlsb3FnNzh1b242&utm_source=qr" class="ig-link" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="IG Logo" class="ig-logo">
                 關注我
             </a>
         </div>
-        <p style="margin-top: 30px; font-size: 0.8em; opacity: 0.8;">© 2025 黃靖云 個人成果網頁製作</p>
+        <p style="margin-top: 30px; font-size: 0.8em; opacity: 0.8;">© 2025 黃靖云 個人成果網頁製作 [cite: 3, 4]</p>
     </footer>
 
 </body>
 </html>
-
-
