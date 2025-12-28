@@ -164,4 +164,90 @@
         }
 
         .ig-link:hover {
-            background: #ff7088
+            background: #ff7088;
+        }
+
+        .ig-logo {
+            width: 25px;
+            filter: brightness(0) invert(1); /* 讓圖標變白色 */
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5em; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍰 靖云的國北美食探險筆記 🍦</h1>
+        <p>跟著心諮系女孩，尋找治癒心靈的美味！</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>🌸 關於我</h2>
+            <div class="intro-content">
+                <img src="jpg1.jpg" alt="靖云的照片" class="intro-img">
+                <div class="intro-text">
+                    <p>你好！我是<strong>黃靖云</strong>，目前就讀於<strong>國立台北教育大學心理與諮商學系</strong>大一。</p>
+                    <p>因為每天都在這附近活動，我對國北周邊的美食可是非常有心得的！這裡不僅有填飽肚子的日常便當，還有能放鬆心情的小店。希望透過我的分享，能帶你找到最適合你的那一味！</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>📍 美食探險地圖</h2>
+            <p>點擊地圖標記，看看我推薦的店家在哪裡吧！</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3615.32516151419!2d121.5396061750454!3d25.02303692782351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTE45be3576O6aOf!5e0!3m2!1szh-TW!2stw!4v1766904206183!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="food">
+            <h2>🍱 嚴選美食推薦</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="4.jpg" alt="文哥 巷仔口米粉湯">
+                    <h3>文哥 巷仔口米粉湯</h3>
+                    <p>便宜又大碗，是學生族想省錢又能吃超飽的首選推薦！</p>
+                </div>
+                <div class="food-card">
+                    <img src="food2.jpg" alt="笑嘻嘻港式現炒飯麵">
+                    <h3>笑嘻嘻港式現炒</h3>
+                    <p>CP值超高，現炒的香氣十足，每天中午都是大排長龍！</p>
+                </div>
+                <div class="food-card">
+                    <img src="food3.jpg" alt="阿孟石碗燒河粉">
+                    <h3>阿孟石碗燒河粉</h3>
+                    <p>特別推薦涼拌米線，清爽開胃，是夏天最美味的選擇！</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <h2>💌 靖云的小小心得</h2>
+        <p>對我來說，美食是治癒心靈最好的良藥。<br>希望這份地圖能帶給你滿滿的幸福感與飽足感！✨</p>
+        
+        <div class="contact-box">
+            <p>🏫 國立台北教育大學 | 心理與諮商學系 大一</p>
+            <p>📧 Email: <a href="mailto:s111411015@stu.ntue.edu.tw">s111411015@stu.ntue.edu.tw</a></p>
+            
+            <a href="https://www.instagram.com/你的帳號" class="ig-link" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="IG" class="ig-logo">
+                關注我的美食日常
+            </a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8em; opacity: 0.8;">© 2024 黃靖云 個人成果網頁製作</p>
+    </footer>
+
+</body>
+</html>
